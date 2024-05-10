@@ -1,19 +1,10 @@
-import { Link, Stack, useNavigation } from "expo-router";
-import { Text, View } from "react-native";
-import { useEffect } from "react";
-
+import { View, Text } from "react-native";
+import { Link } from "expo-router";
 export default function Home() {
-  const navigation = useNavigation();
-
-  useEffect(() => {
-    navigation.setOptions({ headerShown: true });
-  }, [navigation]);
-
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Link href={"./details"}>
-        <Text>Home Screen</Text>
-      </Link>
+      <Text>Home Screen</Text>
+      <Link href="/modal">Present modal</Link>
     </View>
   );
 }
