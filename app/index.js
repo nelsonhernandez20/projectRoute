@@ -1,19 +1,5 @@
-import { Link, Stack, useNavigation } from "expo-router";
-import { Text, View } from "react-native";
-import { useEffect } from "react";
+import { Link } from "expo-router";
 
-export default function Home() {
-  const navigation = useNavigation();
-
-  useEffect(() => {
-    navigation.setOptions({ headerShown: true });
-  }, [navigation]);
-
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Link href={"./details"}>
-        <Text>Home Screen</Text>
-      </Link>
-    </View>
-  );
+export default function Root() {
+  return <Link href="/home/messages">Navigate to nested route</Link>;
 }
