@@ -11,8 +11,14 @@ export default function Home() {
 
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Link href={"./details"}>
-        <Text>Home Screen</Text>
+      <Link href={"/(search)/baconbrix"}>
+        <Text>Search</Text>
+      </Link>
+      <Link href={"/(profile)/baconbrix"}>
+        <Text>profile</Text>
+      </Link>
+      <Link href={"/(home)/baconbrix"}>
+        <Text>Home</Text>
       </Link>
     </View>
   );
