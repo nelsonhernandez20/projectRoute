@@ -11,8 +11,11 @@ export default function Home() {
 
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Link href={"./details"}>
+      <Link href={"/home"}>
         <Text>Home Screen</Text>
+      </Link>
+      <Link style={{ marginVertical: 20 }} href={"/(home,search)"}>
+        <Text>search Screen</Text>
       </Link>
     </View>
   );
